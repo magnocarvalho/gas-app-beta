@@ -2,24 +2,26 @@
   "expo": {
     "name": "Silva Gás",
     "slug": "silvagas",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "platforms": ["ios", "android"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#34af23"
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "updates": {
-      "enabled": false
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
     },
     "android": {
       "package": "silva.gas.platform",
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
