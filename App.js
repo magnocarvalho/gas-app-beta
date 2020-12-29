@@ -1,26 +1,42 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
-import { NavigationContainer } from "@react-navigation/native";
-import Routes from "./src/routes/start.router";
-import Home from "./src/pages/home";
+import React, {useEffect} from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
 
-export default function App() {
+import {
+  Header,
+  LearnMoreLinks,
+  Colors,
+  DebugInstructions,
+  ReloadInstructions,
+} from 'react-native/Libraries/NewAppScreen';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import SplashScreen from 'react-native-splash-screen';
+import Home from './src/pages/home';
+
+const App: () => React$Node = () => {
+  // useEffect(() => {
+  //   SplashScreen.hide();
+  // }, []);
   return (
     <SafeAreaProvider style={styles.container}>
-      <NavigationContainer>
-        <Home />
-      </NavigationContainer>
+      <Home />
     </SafeAreaProvider>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#34af23",
-    alignItems: "stretch",
-    justifyContent: "center",
+    backgroundColor: '#34af23',
+    alignItems: 'stretch',
+    justifyContent: 'center',
   },
 });
+
+export default App;
