@@ -9,7 +9,6 @@ import Home from "./src/pages/home";
 export default function App() {
   return (
     <SafeAreaProvider style={styles.container}>
-      <StatusBar barStyle="light-content" />
       <NavigationContainer>
         <Home />
       </NavigationContainer>
