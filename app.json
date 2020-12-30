@@ -2,7 +2,7 @@
   "expo": {
     "name": "Silva Gás",
     "slug": "silvagas",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "platforms": ["ios", "android"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,7 +21,7 @@
     },
     "android": {
       "package": "silva.gas.platform",
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
